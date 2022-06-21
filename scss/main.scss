@@ -1,0 +1,46 @@
+@use './variables.scss' as *;
+@use './container_bottom.scss' as *;
+@use './container_middle.scss' as *;
+@use './container_top.scss' as *;
+@use './header.scss' as *;
+@use './footer.scss' as *;
+
+body {
+    font-family: 'Barlow', sans-serif;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header, main, footer {
+    margin: 0 auto;
+    max-width: 1110px;
+    width: 100%;
+}
+
+//Klasyczne punkty graniczne max-width: 600px (smartfon), 768px (tablet), 992px/1024px(tablet poziomo, małe i starsze laptopy), 1200px(większe ekrany)
+
+//TABLET
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+
+    header, main, footer {
+        margin: 0 auto;
+        max-width: 1023px;
+        width: 100%;
+    }
+}
+
+//PHONE
+
+@media screen and (max-width: 767px) {
+    header, main, footer {
+        margin: 0 auto;
+        max-width: 767px;
+        width: 100%;
+    }}

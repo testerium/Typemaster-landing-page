@@ -1,0 +1,35 @@
+@use './variables.scss' as *;
+
+footer {
+    font-size: 16px;
+    line-height: 26px;
+    color: $grey_dark;
+    text-align: center;
+
+    span {
+        font-weight: 700;
+    }
+
+    p {
+        font-weight: 500;
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    footer {
+        p {
+            margin: 142px 250px 43px 250px;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    
+    footer {
+        p {
+            margin: 96px 52px 50px 52px;
+        }
+    }
+}
+

@@ -1,0 +1,143 @@
+@use './variables.scss' as *;
+
+#container_top {
+        margin: 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 125px;
+
+        .main_top {
+            width: 445px;
+            margin-left: 40px;
+        }
+    
+        img {
+            width: 540px;
+            height: 480px;
+            border-radius: 20px;
+            overflow-x: hidden;
+        }
+
+        h1 {
+            font-weight: 900;
+            font-size: 56px;
+            line-height: 56px;
+            text-transform: uppercase;
+            color: $navy;
+            margin-top: 40px;
+            margin-bottom: 24px;
+        }
+
+        p {        
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 26px;
+            color: $grey_dark;
+            margin-bottom: 40px;
+        }
+
+        button {
+            border: none;
+            border-radius: 8px;
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 26px;
+        }
+
+            .button_preorder {
+                width: 175px;
+                height: 58px;
+                background: $orange_dark;
+                margin-right: 40px;
+                color: $white;
+            }
+
+            .button_preorder:hover {
+                cursor: pointer;
+                background-color: $orange_light;
+            }
+            
+            .button_release {
+                width: 140px;
+                height: 26px;
+                color: $grey_dark;
+                background: none;
+            }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    #container_top {
+        max-width: 1023px;
+        width: 100%;
+        grid-column-gap: 69px;
+    
+        .main_top {
+            width: 339px;
+        }
+
+        div {
+            overflow: hidden;
+        }
+
+        img {
+            width: 478px;
+            height: 425px;
+        }
+
+        h1 {
+            font-size: 48px;
+            line-height: 48px;
+        }
+
+        p {       
+            font-size: 16px;
+        }
+
+        .button_preorder {
+            margin-right: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #container_top {
+        display: flex;
+        flex-wrap: wrap;
+        
+        div {
+            margin-top: 60px;
+            overflow: hidden;
+        }
+        
+        img {
+            width: 372px;
+            height: 331px;
+            margin-left: 24px;
+        }
+
+        .main_top {
+            //margin-left: 0;
+            margin-bottom: 50px;
+            margin: 0 24px;
+
+            h1 {
+                font-size: 48px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+
+        .button_preorder {
+            width: 150px;
+            margin-right: 32px;
+        }
+
+        .button_release {
+            width: 140px;
+        }}
+    }
+}
+

@@ -1,0 +1,133 @@
+@use './variables.scss' as *;
+
+#container_middle {
+    margin: 30px 0;
+
+    .main_middle {
+        display: flex;
+    }
+
+    .img_left {
+        width: 255px;
+        height: 480px;
+        border-radius: 20px;
+        margin-right: 30px; 
+    }
+
+    .img_right {
+        width: 445px;
+        height: 480px;
+        border-radius: 20px;
+    }
+
+    .text_middle {
+        margin: 112px 0 0 125px;
+
+        h2 {
+            font-weight: 900;
+            font-size: 32px;
+            line-height: 36px;
+            text-transform: uppercase;
+            color: $navy;
+            margin-bottom: 27px;
+        }
+
+        p {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 26px;
+            color: $grey_dark;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    #container_middle {
+        max-width: 1023px;
+        width: 100%;
+
+        .main_middle {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    
+        .img_left {
+            width: 214px;
+            height: 320px;
+        }
+    
+        .img_right {
+            width: 445px;
+            height: 320px;
+        }
+    
+        .text_middle {
+            width: 689px;
+            margin: 72px 0;
+            display: flex;    
+            align-items: center; 
+
+            h2, p {
+                margin: 0;
+            }
+
+            p {
+                padding-left: 55px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    #container_middle {
+        margin: 0 24px;
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+
+        .main_middle {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+            margin: 24px 0;
+        }
+    
+        #img_left_div {
+            overflow: hidden;
+            position: absolute;
+            left: -40px;
+        }
+        
+        .img_left {
+            width: 129px;
+            height: 193px;
+            margin-right: 24px;
+        }
+
+        .img_right {
+            width: 220px;
+            height: 193px;
+        }
+    
+        .text_middle {
+            margin: 72px auto 111px auto;
+            display: flex;    
+            flex-direction: column;
+            align-items: center; 
+
+            h2 {
+                margin: 0 60px;
+                text-align: center;
+            }
+
+            p {
+                padding-top: 24px; 
+                text-align: center;
+            }
+        }
+    }
+}
+

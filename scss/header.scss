@@ -1,0 +1,53 @@
+@use './variables.scss' as *;
+
+header {
+    div {
+        margin: 55px 0 83px 40px;
+    }
+
+    button {
+        float: right;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 26px;
+        text-transform: uppercase;
+        color: $navy;
+        background: #E8EFF2;
+        border-radius: 8px;
+        width: 175px;
+        height: 58px;
+        border: none;
+    }
+
+    button:hover {
+        cursor: pointer;
+        background-color: $navy;
+        color: $white;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    header {
+        max-width: 1023px;
+
+        div {
+            margin: 40px 40px 62px 40px;
+
+        button {
+            float: right;
+        }
+
+    }}}
+
+    @media screen and (max-width: 767px) {
+        header {
+            max-width: 767px;
+    
+            div {
+                margin: 24px 24px 64px 24px;
+    
+            button {
+                float: right;
+            }
+    
+        }}} 
