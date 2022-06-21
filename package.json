@@ -3,6 +3,6 @@
     "sass": "^1.52.3"
   }, 
   "scripts": {
-    "build": "npm run saas scss:css"
+    "build": "sass scss:css"
   }
 }
